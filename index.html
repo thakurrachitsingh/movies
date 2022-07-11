@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_box">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="login" id="a" class="toggle-btn" onclick="login()">Login</button>
+                <button type="register" id="b" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div id="login" class="input-grp">
+                <input id="iemail" class="input" type="text" placeholder="User Id">
+                <input id="ipassword" class="input" type="text" placeholder="Enter Password">
+                <input id="input" class="check" type="checkbox"><span style="color: white; font-size: 12px;">Remember Password</span>
+                <div id="input" style="height: 30px; width: 100px; margin: auto;" ><button class="submit-btn" type="submit" onclick="last()">Submit</button></div>
+
+                <div class="social-grp">
+                    <a class="sacial-anchor" href="http://www.facebook.com"><img class="social-btn" src="./images/facebook-48.png"></a>
+                    <a class="sacial-anchor" href="http://www.google.com"><img class="social-btn" src="./images/icons8-google-48.png"></a>
+                    <a class="sacial-anchor" href="http://www.twitter.com"><img class="social-btn" src="./images/twitter-48.png"></a>
+                </div>
+            </div>
+            <div id="register" class="input-grp">
+                <input id="remail"  class="input" type="text" placeholder="Email">
+                <input id="rpassword" class="input" type="text" placeholder="Enter Password">
+                <input id="input" class="check" type="checkbox" required><span style="color: white; font-size: 12px;">I agree to terms and conditions</span>
+                <div id="input" style="height: 30px; width: 100px; margin: auto;" ><button class="submit-btn" onclick="first()">Register</button></div>
+
+                <div class="social-grp">
+                    <a class="sacial-anchor" href="http://www.facebook.com"><img class="social-btn" src="./images/facebook-48.png"></a>
+                    <a class="sacial-anchor" href="http://www.google.com"><img class="social-btn" src="./images/icons8-google-48.png"></a>
+                    <a class="sacial-anchor" href="http://www.twitter.com"><img class="social-btn" src="./images/twitter-48.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "11px";
+            z.style.left = "110px";
+            x.style.display = "none";
+            y.style.display = "block";
+            a.style.color = "white";
+            b.style.color = "black";
+        }
+        function login(){
+            x.style.left = "11px";
+            y.style.left = "400px";
+            z.style.left = "0px";
+            x.style.display = "block";
+            y.style.display = "none";
+            a.style.color = "black";
+            b.style.color = "white";
+        }      
+    </script>
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <script src="firebase.js"></script>
+        <script src="./index.js"></script>
+</body>
+</html>

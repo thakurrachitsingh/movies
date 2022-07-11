@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom right, #0778F8 , #07f827 );
+    animation-name: back;
+    animation-duration: 3s;
+    height: 100%;
+    width: 100%;
+    
+}
+.form_box{
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    opacity: 0.6;
+    margin: 3% 40%;
+    position: absolute;
+}
+
+
+.btn-box{
+  width: 220px;
+  height: 30px;
+  margin: 40px auto;
+  border: 2px white solid;
+  border-radius: 30px;
+  box-shadow: 2px; 
+  position: relative; 
+}
+#btn{
+    position: absolute;
+    background-color: yellow;
+    width: 110px;
+    height:100%;
+    border-radius: 30px; 
+    
+}
+
+.toggle-btn{
+    cursor: pointer;
+    height: 30px;
+    background-color: transparent;
+    width: 108px;
+    border: none;
+    position: relative;
+    font-weight: bolder;
+    
+}
+
+#b{
+    color: white;
+}
+
+.input-grp{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    padding: 20px 20px;
+    position: absolute;
+}
+
+.input{
+    height: 30px;
+    width: 95%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+
+#iemail{
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+#rpassword{
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.rpassword{
+    height: 30px;
+    width: 95%;
+}
+.remail{
+    height: 30px;
+    width: 95%;
+}
+.check{
+    height: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+.submit-btn{
+    margin: auto; 
+    background-color: yellow; 
+    border-radius: 30px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+
+#input{
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.social-grp{
+    text-align: center;
+    height: 10px;
+}
+
+.social-btn{
+    align-items: center;
+    height: 30px;
+    width: auto;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.social-anchor{
+
+}
+
+#login{
+    left: 11px;
+    
+}
+#register{
+    left: 400px;
+    display: none;
+}
